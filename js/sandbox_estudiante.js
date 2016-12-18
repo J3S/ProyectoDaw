@@ -4,16 +4,16 @@ $(document).ready(function() {
     var knobData;
     var knobColors;
     var knobLabels;
-        $.getJSON("../../../data/estudiantes_sandbox/estadistica.json", function(data) {
-            lineLabel = data.linechart.labels;
-            lineData = data.linechart.data;
-            knobData = data.knobChart.data;
-            knobColors = data.knobChart.color;
-            knobLabels = data.knobChart.labels;
-            dibujarLineChart(lineLabel, lineData);
-            dibujarKnobChart(knobData, knobColors, knobLabels);
-            $(".dial").knob();
-        });
+    $.getJSON("../../../data/estudiantes_sandbox/estadistica.json", function(data) {
+        lineLabel = data.linechart.labels;
+        lineData = data.linechart.data;
+        knobData = data.knobChart.data;
+        knobColors = data.knobChart.color;
+        knobLabels = data.knobChart.labels;
+        dibujarLineChart(lineLabel, lineData);
+        dibujarKnobChart(knobData, knobColors, knobLabels);
+        $(".dial").knob();
+    });
 })
 
 function dibujarLineChart(labelsL, dataL) {

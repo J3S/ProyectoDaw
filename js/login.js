@@ -5,13 +5,15 @@ $("#ingresar").click(function(event) {
     var contrasenia = $("#contrasenia");
     if (usuario.val() !== "" && contrasenia.val() !== "") {
         if (usuario.val() === user_estudiante && contrasenia.val() === user_estudiante) window.location.replace("./pages/sandbox/estudiante");
-        if (usuario.val() === user_profesor && contrasenia.val() === user_profesor) window.location.replace("./pages/sandbox/profesor");
-        $("#usuario-group").addClass("has-error");
-        $("#error-msg-usuario").addClass("hidden");
-        $("#contrasenia-group").addClass("has-error");
-        $("#error-msg-contrasenia").addClass("hidden");
-        $("#error-msg-combinacion").removeClass("hidden");
-        $("#combinacion-group").addClass("has-error");
+        else if (usuario.val() === user_profesor && contrasenia.val() === user_profesor) window.location.replace("./pages/sandbox/profesor");
+        else{
+            $("#usuario-group").addClass("has-error");
+            $("#error-msg-usuario").addClass("hidden");
+            $("#contrasenia-group").addClass("has-error");
+            $("#error-msg-contrasenia").addClass("hidden");
+            $("#error-msg-combinacion").removeClass("hidden");
+            $("#combinacion-group").addClass("has-error");
+        }
     } else {
         $("#error-msg-combinacion").addClass("hidden");
         if (usuario.val() === "") {

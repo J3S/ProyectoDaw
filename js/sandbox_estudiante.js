@@ -80,9 +80,9 @@ function dibujarLineChart(labelsL, dataL) {
 function dibujarKnobChart(values, colors, labels) {
     for (var i = 0; i < values.length; i++) {
         if (i < 3) {
-            var div = $('<div class="col-xs-4 text-center"></div>');
+            var div = $('<div class="col-xs-6 col-md-4 text-center"></div>');
         } else {
-            var div = $('<div class="col-xs-6 text-center"></div>');
+            var div = $('<div class="col-xs-6 col-md-6 text-center"></div>');
         }
         var input = $('<input type="text" class="dial" data-readonly="true" value="' + values[i] + '" data-width="120" data-height="120" data-fgColor="' + colors[i] + '">');
         var label = $('<div class="knob-label">' + labels[i] + '</div>');

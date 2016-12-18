@@ -1,27 +1,83 @@
 {
-  "profesores":[{
-	"imagen": "JoseCedeno.jpg",
-	"nombre": "Jose Cedeño",
-	"correo": "jose.gabriel@gmail.com",
-	"paralelos": "2-FIEC, 5-FIEC, 2-ICM"
-  },
-  {
-	"imagen": "Ejemplo.jpg",
-	"nombre": "Nombre Apellido",
-	"correo": "ejemplo@espol.edu.ec",
-	"paralelos": "2-FIEC, 5-FIEC, 2-ICM"
-  },
-  {
-	"imagen": "Ejemplo.jpg",
-	"nombre": "Nombre Apellido",
-	"correo": "ejemplo@espol.edu.ec",
-	"paralelos": "2-FIEC, 5-FIEC, 2-ICM"
-  },
-  {
-	"imagen": "Ejemplo.jpg",
-	"nombre": "Nombre Apellido",
-	"correo": "ejemplo@espol.edu.ec",
-	"paralelos": "2-FIEC, 5-FIEC, 2-ICM"
-  }
+  "coordinador":[
+        {
+            "rutaImagen": "../../img/sandbox/avatar5.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "13:30-15:30",
+            "oficina": "15A-12"
+        }
+     ],
+  "profesores":[
+    {
+        "rutaImagen": "../../img/sandbox/avatar4.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "13:30-15:30",
+            "oficina": "15A-12"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar4.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "09:30-11:30",
+            "oficina": "15A-12"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar4.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "11:30-13:30",
+            "oficina": "15A-12"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar4.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "14:00-15:00",
+            "oficina": "15A-12"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar4.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "13:30-15:30",
+            "oficina": "15A-12"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar4.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "13:30-15:30",
+            "oficina": "15A-12"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar4.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "11:30-13:30",
+            "oficina": "15A-12"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar4.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "11:30-13:30",
+            "oficina": "15A-12"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar4.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "11:30-13:30",
+            "oficina": "15A-12"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar4.png",
+            "nombre": "Nombre Apellido",
+            "correo": "coordinador@espol.edu.ec",
+            "horario": "13:30-15:30",
+            "oficina": "15A-12"
+    }
  ]
 }

@@ -1,0 +1,106 @@
+{
+  "ayudantesClases":[
+        {
+            "rutaImagen": "../../img/sandbox/avatar2.png",
+            "nombre": "Nombre Apellido 1",
+            "correo": "ejemplo1@espol.edu.ec" 
+        },
+        {
+            "rutaImagen": "../../img/sandbox/avatar2.png",
+            "nombre": "Nombre Apellido 2",
+            "correo": "ejemplo2@espol.edu.ec"
+        },
+        {
+            "rutaImagen": "../../img/sandbox/avatar2.png",
+            "nombre": "Nombre Apellido 3",
+            "correo": "ejemplo3@espol.edu.ec"
+        },
+        {
+            "rutaImagen": "../../img/sandbox/avatar2.png",
+            "nombre": "Nombre Apellido 4",
+            "correo": "4@espol.edu.ec"
+        },
+        {
+            "rutaImagen": "../../img/sandbox/avatar2.png",
+            "nombre": "Nombre Apellido 5",
+            "correo": "ejemplo5@espol.edu.ec"
+        },
+        {
+            "rutaImagen": "../../img/sandbox/avatar2.png",
+            "nombre": "Nombre Apellido 6",
+            "correo": "ejemplo6@espol.edu.ec" 
+        },
+        {
+            "rutaImagen": "../../img/sandbox/avatar2.png",
+            "nombre": "Nombre Apellido 7",
+            "correo": "ejemplo7@espol.edu.ec"
+        },
+        {
+            "rutaImagen": "../../img/sandbox/avatar2.png",
+            "nombre": "Nombre Apellido 8",
+            "correo": "ejemplo8@espol.edu.ec"
+        },
+        {
+            "rutaImagen": "../../img/sandbox/avatar2.png",
+            "nombre": "Nombre Apellido 9",
+            "correo": "ejemplo9@espol.edu.ec"
+        },
+        {
+            "rutaImagen": "../../img/sandbox/avatar2.png",
+            "nombre": "Nombre Apellido 10",
+            "correo": "ejemplo10@espol.edu.ec"
+        }
+     ],
+  "ayudantesDeberes":[
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 11",
+        "correo": "ejemplo11@espol.edu.ec" 
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 12",
+        "correo": "ejemplo12@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 13",
+        "correo": "ejemplo13@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 14",
+        "correo": "14@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 15",
+        "correo": "ejemplo15@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 16",
+        "correo": "ejemplo16@espol.edu.ec" 
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 17",
+        "correo": "ejemplo17@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 18",
+        "correo": "ejemplo18@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 19",
+        "correo": "ejemplo19@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 20",
+        "correo": "ejemplo20@espol.edu.ec"
+    }
+ ]
+}

@@ -1,23 +1,54 @@
 {
-  "ayudantes":[{
-	"imagen": "JoseCedeno.jpg",
-	"nombre": "Jose Cedeño",
-	"correo": "jose.gabriel@gmail.com" 
-  },
-  {
-	"imagen": "Ejemplo.jpg",
-	"nombre": "Nombre Apellido",
-	"correo": "ejemplo@espol.edu.ec"
-  },
-  {
-	"imagen": "Ejemplo.jpg",
-	"nombre": "Nombre Apellido",
-	"correo": "ejemplo@espol.edu.ec"
-  },
-  {
-	"imagen": "Ejemplo.jpg",
-	"nombre": "Nombre Apellido",
-	"correo": "ejemplo@espol.edu.ec"
-  }
+  "ayudantes":[
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 1",
+        "correo": "ejemplo1@espol.edu.ec" 
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 2",
+        "correo": "ejemplo2@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 3",
+        "correo": "ejemplo3@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 4",
+        "correo": "4@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 5",
+        "correo": "ejemplo5@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 6",
+        "correo": "ejemplo6@espol.edu.ec" 
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 7",
+        "correo": "ejemplo7@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 8",
+        "correo": "ejemplo8@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 9",
+        "correo": "ejemplo9@espol.edu.ec"
+    },
+    {
+        "rutaImagen": "../../img/sandbox/avatar.png",
+        "nombre": "Nombre Apellido 10",
+        "correo": "ejemplo10@espol.edu.ec"
+    }
  ]
 }

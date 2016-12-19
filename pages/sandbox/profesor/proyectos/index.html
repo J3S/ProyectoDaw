@@ -129,8 +129,8 @@
         <li class="header">Opciones</li>
         <li><a href="../"><i class="fa fa-tasks"></i> <span>Resumen</span></a></li>
         <li><a href="../ejercicios"><i class="fa fa-book"></i> <span>Ejercicios</span></a></li>
-        <li class="active"><a href="#"><i class="fa fa-folder-open"></i> <span>Mis ejercicios</span></a></li>
-        <li><a href="../proyectos"><i class="fa fa-cogs"></i> <span>Proyectos</span></a></li>
+        <li><a href="../mis_ejercicios"><i class="fa fa-folder-open"></i> <span>Mis ejercicios</span></a></li>
+        <li class="active"><a href="#"><i class="fa fa-cogs"></i> <span>Proyectos</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -142,10 +142,10 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <button type="button" class="btn btn-success" id="crear-ejercicio"><i class="fa fa-plus" aria-hidden="true"></i> Crear ejercicio</button>
+      <button type="button" class="btn btn-success" id="crear-ejercicio"><i class="fa fa-plus" aria-hidden="true"></i> Crear proyecto</button>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Mis Ejercicios</li>
+        <li class="active">Proyectos</li>
       </ol>
     </section>
 
@@ -153,9 +153,9 @@
     <section class="content">
       <div class="row">
         <div class="col-xs-12">
-            <div class="box box-success">
+            <div class="box box-danger">
               <div class="box-header">
-                <h3 class="box-title">Ejercicios disponibles</h3>
+                <h3 class="box-title">Proyectos disponibles</h3>
               </div>
               <!-- /.box-header -->
               <div class="box-body table-responsive">
@@ -164,8 +164,10 @@
                         <thead>
                           <tr>
                             <th>Título</th>
-                            <th>Dificultad</th>
-                            <th></th>
+                            <th>Autor</th>
+                            <th>Entrega</th>
+                            <th>Archivo</th>
+                            <th>Etiquetas</th>
                           </tr>
                         </thead>
                         <tbody id="lista-ejercicios">
@@ -227,10 +229,12 @@
 <script src="../../../../externo/admin-lte/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../../../externo/admin-lte/js/demo.js"></script>
+<script src="../../../../externo/chartjs/Chart.js"></script>
+<script src="../../../../externo/knob/jquery.knob.js"></script>
 <!-- DataTable -->
 <script type="text/javascript" language="javascript" src="../../../../externo/dataTables/js/jquery.dataTables.js"></script>
 <script type="text/javascript" language="javascript" src="../../../../externo/dataTables/js/dataTables.bootstrap.js"></script>
 
-<script src="../../../../js/sandbox_profesor_mis_ejercicios.js"></script>
+<script src="../../../../js/sandbox_profesor_proyectos.js"></script>
 </body>
 </html>

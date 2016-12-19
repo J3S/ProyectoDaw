@@ -46,6 +46,11 @@ $("#crear-ejercicio").click(function() {
 });
 
 $('body').on('click', '.editar-button', function() {
-    console.log('click')
     window.location.replace("./editar");
+});
+
+$('body').on('click', '.eliminar-button', function() {
+    var table = $('#example').DataTable();
+    table.row( $(this).parent().parent() ).remove().draw();
+    console.log($(this).parent().parent())
 });

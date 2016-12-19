@@ -144,10 +144,10 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>Crear ejercicio</h1>
+      <h1>Crear proyecto</h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li>Mis Ejercicios</li>
+        <li>Proyectos</li>
         <li class="active">Crear</li>
       </ol>
     </section>
@@ -160,11 +160,19 @@
             <!-- form start -->
             <form role="form" id="form-crear">
               <div class="box-body">
-                <div class="form-group" id="titulo-group">
-                  <label for="titulo">Título</label>
-                  <input type="text" class="form-control" id="titulo" placeholder="Título del proyecto">
-                  <p class="hidden text-danger" id="msg-titulo">Título vacío</p>
+                <div class="row">
+                  <div class="form-group col-sm-9" id="titulo-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" class="form-control" id="titulo" placeholder="Título del proyecto">
+                    <p class="hidden text-danger" id="msg-titulo">Título vacío</p>
+                  </div>
+                  <div class="form-group col-sm-3" id="fecha-group">
+                    <label for="fecha">Fecha de entrega</label>
+                    <input type="date" class="form-control" id="fecha">
+                    <p class="hidden text-danger" id="msg-fecha">Fecha vacía</p>
+                  </div>
                 </div>
+                
                 <div class="form-group" id="descripcion-group">
                   <label for="descripcion">Descripción</label>
                   <textarea class="form-control" rows="3" id="descripcion" placeholder="Descripción del proyecto"></textarea>
@@ -190,19 +198,12 @@
                         </div>
                     </div>
                   </div>
-                  
-                  
                   <p class="hidden text-danger" id="msg-etiquetas">No se han agregado etiquetas</p>
                 </div>
-                <div class="form-group" id="dificultad-group">
-                  <label for="dificultad">Dificultad</label>
-                  <div class="row">
-                    <div class="col-sm-4">
-                        <select class="form-control" id="dificultad">
-                        </select>
-                    </div>
-                  </div>
-                  <p class="hidden text-danger" id="msg-dificultad">Dificultad vacía</p>
+                <div class="form-group" id="archivo-group">
+                  <label for="exampleInputFile">Archivo del proyecto</label>
+                  <input type="file" id="exampleInputFile" class="form-control">
+                  <p class="hidden text-danger" id="msg-archivo">No se ha agregado ningún archivo</p>
                 </div>
               </div>
               <!-- /.box-body -->
@@ -267,7 +268,7 @@
 <script type="text/javascript" language="javascript" src="../../../../../externo/dataTables/js/jquery.dataTables.js"></script>
 <script type="text/javascript" language="javascript" src="../../../../../externo/dataTables/js/dataTables.bootstrap.js"></script>
 
-<script src="../../../../../js/sandbox_profesor_crear_ejercicio.js"></script>
+<script src="../../../../../js/sandbox_profesor_crear_proyecto.js"></script>
 
 </body>
 </html>

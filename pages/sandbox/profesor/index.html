@@ -49,39 +49,18 @@
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          <!-- Notifications: style can be found in dropdown.less -->
-          <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer"><a href="#">View all</a></li>
-            </ul>
-          </li>
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../../../img/sandbox/avatar.png" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <img class="user-image" alt="User Image" id="imagen-menu">
+              <span class="hidden-xs" id="nombre-menu">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="../../../img/sandbox/avatar.png" class="img-circle" alt="User Image">
+                <img class="img-circle" alt="User Image" id="imagen-popup-menu">
 
-                <p>
+                <p id="nombre-popup-menu">
                   Alexander Pierce - Web Developer
                   <small>Member since Nov. 2012</small>
                 </p>
@@ -89,10 +68,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="./perfil" class="btn btn-default btn-flat">Perfil</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="../../../" class="btn btn-default btn-flat">Cerrar sesión</a>
                 </div>
               </li>
             </ul>
@@ -115,11 +94,11 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../../../img/sandbox/avatar.png" class="img-circle" alt="User Image">
+          <img class="img-circle" alt="User Image" id="imagen-perfil">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <p class="nombre" id="nombre-perfil">Alexander Pierce</p>
+          <a href="#" id="nivel-prog"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
       <!-- sidebar menu: : style can be found in sidebar.less -->
@@ -228,5 +207,6 @@
 <script src="../../../externo/chartjs/Chart.js"></script>
 <script src="../../../externo/knob/jquery.knob.js"></script>
 <script src="../../../js/sandbox_profesor.js"></script>
+<script src="../../../js/sandbox_profesor_cargar_datos.js"></script>
 </body>
 </html>

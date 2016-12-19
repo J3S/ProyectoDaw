@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var nivel = $("#nivel");
+    var nivel = $("#nivel-prog");
     $.getJSON("../../../data/estudiantes_sandbox/perfil_min.json", function(data) {
         var nombreData = data.nombre;
         var nivelData = data.nivel;

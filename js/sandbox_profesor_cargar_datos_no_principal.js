@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var nivel = $("#nivel-prog");
-    $.getJSON("../../../../data/estudiantes_sandbox/perfil_min_no_principal.json", function(data) {
+    $.getJSON("../../../../data/profesores_sandbox/perfil_min_no_principal.json", function(data) {
         var nombreData = data.nombre;
         var nivelData = data.nivel;
         var imagenData = data.imagen;

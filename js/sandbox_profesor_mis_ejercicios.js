@@ -40,3 +40,7 @@ $(document).ready(function() {
         });
     });
 });
+
+$("#crear-ejercicio").click(function() {
+    window.location.replace("./crear");
+});

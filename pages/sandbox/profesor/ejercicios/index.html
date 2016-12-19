@@ -7,16 +7,18 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="../../../externo/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../externo/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../../externo/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../../../externo/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="../../../externo/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../../../../externo/ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../../externo/admin-lte/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../../../../externo/admin-lte/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../../../externo/admin-lte/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../../../../externo/admin-lte/css/skins/_all-skins.min.css">
+  <!-- DataTable style -->
+  <link rel="stylesheet" href="../../../../externo/dataTables/css/dataTables.bootstrap.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +33,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../../../index2.html" class="logo">
+    <a href="../../../../index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>SB</b></span>
       <!-- logo for regular state and mobile devices -->
@@ -73,13 +75,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../../../img/sandbox/avatar.png" class="user-image" alt="User Image">
+              <img src="../../../../img/sandbox/avatar.png" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="../../../img/sandbox/avatar.png" class="img-circle" alt="User Image">
+                <img src="../../../../img/sandbox/avatar.png" class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer
@@ -115,7 +117,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../../../img/sandbox/avatar.png" class="img-circle" alt="User Image">
+          <img src="../../../../img/sandbox/avatar.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -125,10 +127,10 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">Opciones</li>
-        <li class="active"><a href="#"><i class="fa fa-tasks"></i> <span>Resumen</span></a></li>
-        <li><a href="./ejercicios"><i class="fa fa-book"></i> <span>Ejercicios</span></a></li>
-        <li><a href="./mis_ejercicios"><i class="fa fa-folder-open"></i> <span>Mis ejercicios</span></a></li>
-        <li><a href="./proyectos"><i class="fa fa-cogs"></i> <span>Proyectos</span></a></li>
+        <li><a href="../"><i class="fa fa-tasks"></i> <span>Resumen</span></a></li>
+        <li class="active"><a href="#"><i class="fa fa-book"></i> <span>Ejercicios</span></a></li>
+        <li><a href="../mis_ejercicios"><i class="fa fa-folder-open"></i> <span>Mis ejercicios</span></a></li>
+        <li><a href="../proyectos"><i class="fa fa-cogs"></i> <span>Proyectos</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -152,30 +154,35 @@
 
     <!-- Main content -->
     <section class="content">
-
-
-          <!-- LINE CHART -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Ejercicios ingresados en la última semana</h3>
-            </div>
-            <div class="box-body">
-              <div class="chart">
-                <canvas id="lineChart" style="height:250px"></canvas>
+      <div class="row" id="ejercicios-dificultad-estadistica">
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+            <div class="box box-success">
+              <div class="box-header">
+                <h3 class="box-title">Ejercicios disponibles</h3>
               </div>
+              <!-- /.box-header -->
+              <div class="box-body table-responsive">
+                    <!-- <div class="container"> -->
+                      <table id="example" class="display table table-hover" cellspacing="0" width="100%">
+                        <thead>
+                          <tr>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Dificultad</th>
+                          </tr>
+                        </thead>
+                        <tbody id="lista-ejercicios">
+                        </tbody>
+                      </table>
+                    <!-- </div> -->
+              </div>
+              <!-- /.box-body -->
             </div>
-            <div class="box-header with-border">
-              <h3 class="box-title">Porcentaje ingresado por nivel</h3>
-            </div>
-            <div class="box-body">
-              <div class="row" id="nivel"></div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-
-
+            <!-- /.box -->
+        </div>
+      </div>
     </section>
     <!-- /.content -->
   </div>
@@ -214,19 +221,21 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 2.2.3 -->
-<script src="../../../externo/jquery/jquery-2.2.3.min.js"></script>
+<script src="../../../../externo/jquery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="../../../externo/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../../../externo/bootstrap/js/bootstrap.min.js"></script>
 <!-- SlimScroll -->
-<script src="../../../externo/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="../../../../externo/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="../../../externo/fastclick/fastclick.js"></script>
+<script src="../../../../externo/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="../../../externo/admin-lte/js/app.min.js"></script>
+<script src="../../../../externo/admin-lte/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../../externo/admin-lte/js/demo.js"></script>
-<script src="../../../externo/chartjs/Chart.js"></script>
-<script src="../../../externo/knob/jquery.knob.js"></script>
-<script src="../../../js/sandbox_profesor.js"></script>
+<script src="../../../../externo/admin-lte/js/demo.js"></script>
+<!-- DataTable -->
+<script type="text/javascript" language="javascript" src="../../../../externo/dataTables/js/jquery.dataTables.js"></script>
+<script type="text/javascript" language="javascript" src="../../../../externo/dataTables/js/dataTables.bootstrap.js"></script>
+
+<script src="../../../../js/sandbox_profesor_ejercicios.js"></script>
 </body>
 </html>

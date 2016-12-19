@@ -44,3 +44,8 @@ $(document).ready(function() {
 $("#crear-ejercicio").click(function() {
     window.location.replace("./crear");
 });
+
+$('body').on('click', '.editar-button', function() {
+    console.log('click')
+    window.location.replace("./editar");
+});
